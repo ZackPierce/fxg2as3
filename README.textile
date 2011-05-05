@@ -1,0 +1,11 @@
+h1. fxg2as3
+
+fxg2as3 is a library and handy AIR application for converting FXG markup to executable Actionscript 3 code.
+
+h2. Directory Structure
+
+The code for this project is split into 3 directories.
+
+* `library` contains the core functionality for converting XML objects containing FXG markup into Strings of Actionscript 3 code
+* `application` contains a small AIR application that uses the `library` code to convert FXG from either the local filesystem or from copied/paste
+* `test` contains FlexUnit oriented unit test classes for the `library` code
