@@ -20,8 +20,10 @@
 			<s:CheckBox id="targetFlexThree" label="Target Flex 3" selected="true" toolTip="{'The output Actionscript will try to be compatible with ' + (targetFlexThree.selected ? 'the Flex 3 SDK and NOT use the Text Layout Framework classes' : 'the Flex 4 SDK')}"/>
 			<s:CheckBox id="useVectorNotation" label="Use Vector Notation" selected="true" toolTip="{'Actionscript drawing code will ' + (useVectorNotation.selected ? 'use the Graphics.drawPath method and Vector class introduced in Flash Player 10' : 'try to be compatible with Flash Player 9 and use the Graphics.moveTo, Graphics.curveTo, and Graphics.lineTo methods.' )}"/>
 			<s:CheckBox id="inspectEmbeddedImages" label="Inspect Embedded Images" selected="true" toolTip="{'FXG2AS3 will ' + (inspectEmbeddedImages.selected ? 'attempt to find bitmap images described in the FXG on the local filesystem and determine their dimensions' : 'generate generic bitmap drawing code without looking for the image files described in the FXG')}"/>
-			<s:NumericStepper id="numericPrecision" stepSize="1" value="5" minimum="1" maximum="20" />
-			<s:Label text="Numeric Precision" />
+			<s:NumericStepper id="numericPrecision" stepSize="1" value="5" minimum="1" maximum="20" 
+							  toolTip="Numeric precision of drawing path x and y value strings"/>
+			<s:Label text="Numeric Precision" 
+					 toolTip="Numeric precision of drawing path x and y value strings"/>
 		</s:Group>
 	</s:Group>
 	<s:Group width="100%" height="100%" id="panelsHolder">
